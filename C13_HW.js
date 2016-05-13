@@ -28,7 +28,7 @@ var removeCity = function () {
 							newDivAppended.addClass('forecast-7days');
 							$(this).append(newDivAppended);
 						
-							var secondPromise = $.ajax('http://api.openweathermap.org/data/2.5/forecast/daily?q==' + cityName +'&units=metric&cnt=7&appid=b1b15e88fa797225412429c1c50c122a').then(function(info){
+							var secondPromise = $.ajax('http://api.openweathermap.org/data/2.5/forecast/daily?q==' + cityName +'&units=metric&cnt=7&appid=3f8ad6ebd197587b8c999d2b1a470e62').then(function(info){
 									var arr = info.list;
 									var forecastUl = $("<ul></ul>");
 									forecastUl.addClass('forecast-ul');
